@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.main = main;
-var question = require("./utils/question.js");
-function main(array) {
+import * as question from "./utils/question.js";
+export function main(array) {
     console.clear();
     if (array) {
-        console.log("Array : ".concat(array.join(', ')));
+        console.log(`Array : ${array.join(', ')}`);
     }
-    console.log("\n1. Input angka\n2. Sorting\n3. Searching\n4. Selesai\n    ");
+    console.log(`
+1. Input angka
+2. Sorting
+3. Searching
+4. Selesai
+    `);
     question.defaultQuestion(array);
 }
 main(null);

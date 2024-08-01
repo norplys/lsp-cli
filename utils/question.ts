@@ -22,6 +22,7 @@ export async function defaultQuestion(array: Number[] | null){
         case 4:
             console.log("Terima kasih")
             process.exit(0)
+            break
         default:
             console.log("Input tidak valid")
             defaultQuestion(array)
